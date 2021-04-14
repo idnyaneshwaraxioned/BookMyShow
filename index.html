@@ -1,14 +1,14 @@
 <!doctype html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
- 
+
   <meta charset="utf-8">
 
   <title>BookMyShow</title>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 
 </head>
 
@@ -27,17 +27,77 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <div class="header-top">
+        <nav>
+          <div class="hamburger desktop-none">
+            <span class="bar1">bar1</span>
+            <span class="bar2">bar2</span>
+            <span class="bar3">bar3</span>
+          </div>
+          <ul class="home-menu-left">
+            <li class="menu-item"><a href="index.html" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </li>
+            <li class="menu-item"><a href="#FIXME" title="Experiences">Experiences</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Movies">Movies</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Events">Events</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Plays">Plays</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Sports">Sports</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Best of 2021">Best of 2021</a></li>
+          </ul>
+          <ul class="home-menu-right">
+            <li class="menu-item"><a href="#FIXME" title="Offers">Offers</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Gift Cards">Gift Cards</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Corporates">Corporates</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Support">Support</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Notification"><i class="fa fa-bell"
+                  aria-hidden="true"></i><span>5</span></a></li>
+            <li class="menu-item"><a href="#FIXME" title="Sign In">Sign In</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Location"><i class="fa fa-map-marker"
+                  aria-hidden="true"></i>Mumbai</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-btm">
+        <div class="wrapper">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="./assets/images/logo.png" alt="BookMyShow">
+            </a>
+          </h1>
+          <form action="#" class="header-form">
+            <select name="city" id="city">
+              <option value="all" selected class="alloption">All</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="pune">Pune</option>
+              <option value="delhi">Delhi</option>
+              <option value="hyderabad">Hyderabad</option>
+            </select>
+            <div class="form-input">
+              <input type="text" name="search" placeholder="Book Ticket for Movies, Events, Plays And Sports">
+            </div>
+          </form>
+          <form action="#" class="language">
+            <figure>
+              <img src="./assets/images/arijit-singh.png" alt="arijit Singh">
+            </figure>
+            <select name="lang" id="lang">
+              <option value="English" selected>English</option>
+              <option value="hindi">Hindi</option>
+              <option value="marathi">Marathi</option>
+            </select>
+          </form>
+        </div>
+      </div>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
+    <footer>
 
     </footer>
     <!--footer section end-->
@@ -45,7 +105,8 @@
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
+  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
 <script src="js/script.js"></script> -->
 </body>
+
 </html>
