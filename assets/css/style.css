@@ -243,16 +243,6 @@ header {
   font-family: fontAwesome;
   color: #fff;
   position: absolute;
-}
-
-.language {
-  margin-right: 20px;
-  display: flex;
-  flex-basis: 13%;
-}
-
-.language figure {
-  width: 45%;
   height: 32px;
   margin: 0 8px;
 }
@@ -329,8 +319,8 @@ header {
 }
 
 .voucher-main { 
-  display: flex;
-  justify-content: space-between;
+  margin: 26px 0px 68px;
+  display: flex; 
 }
 
 .voucher-content {
@@ -349,7 +339,15 @@ header {
   color: #4d4f59;
 }
 
-.download-voucher { width: 60%; }
+.download-voucher {
+  width: 47%;
+  padding: 5px 45px 5px 5px;
+  border: 1px solid #000;
+  border-radius: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .download-voucher a {
   font-weight: bold;
@@ -358,6 +356,58 @@ header {
   color: #000;
 }
 
+.enquiry-form {
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0px 3%;
+  flex-basis: 55%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.enquiry-form-input { 
+  margin-right: 20px;
+  flex-basis: 46%; 
+}
+
+.enquiry-form-input input[type="text"],
+.enquiry-form-input input[type="email"] {
+  width: 100%;
+  padding: 15px 12px;
+  box-sizing: border-box;
+}
+
+.notify { 
+  padding: 15px 10px;
+  border: 1px solid #c6bdbd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  flex-basis: 41%;
+}
+
+.notify figure { 
+  width: 22%;
+  margin-left: 45px;
+}
+
+.enquiry-form input[type="submit"] {
+  width: 41%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+  background-color: #B31B40;
+}
 /*=================================
   main styling ends here
 =================================*/
