@@ -1,14 +1,14 @@
 <!doctype html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
- 
+
   <meta charset="utf-8">
 
   <title>BookMyShow</title>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 
 </head>
 
@@ -27,25 +27,342 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <div class="header-top">
+        <nav>
+          <div class="hamburger desktop-none">
+            <span class="bar1">bar1</span>
+            <span class="bar2">bar2</span>
+            <span class="bar3">bar3</span>
+          </div>
+          <ul class="home-menu-left">
+            <li class="menu-item"><a href="index.html" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </li>
+            <li class="menu-item"><a href="#FIXME" title="Experiences">Experiences</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Movies">Movies</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Events">Events</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Plays">Plays</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Sports">Sports</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Best of 2021">Best of 2021</a></li>
+          </ul>
+          <ul class="home-menu-right">
+            <li class="menu-item"><a href="#FIXME" title="Offers">Offers</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Gift Cards">Gift Cards</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Corporates">Corporates</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Support">Support</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Notification"><i class="fa fa-bell"
+                  aria-hidden="true"></i><span>5</span></a></li>
+            <li class="menu-item"><a href="#FIXME" title="Sign In">Sign In</a></li>
+            <li class="menu-item"><a href="#FIXME" title="Location"><i class="fa fa-map-marker"
+                  aria-hidden="true"></i>Mumbai</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-btm">
+        <div class="wrapper">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="assets/images/logo.png" alt="BookMyShow">
+            </a>
+          </h1>
+          <form action="#" class="header-form">
+            <select name="city" id="city">
+              <option value="all" selected class="alloption">All</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="pune">Pune</option>
+              <option value="delhi">Delhi</option>
+              <option value="hyderabad">Hyderabad</option>
+            </select>
+            <div class="form-input">
+              <input type="text" name="search" placeholder="Book Ticket for Movies, Events, Plays And Sports">
+            </div>
+          </form>
+          <form action="#" class="language">
+            <figure>
+              <img src="assets/images/arijit-singh.png" alt="arijit Singh">
+            </figure>
+            <select name="lang" id="lang">
+              <option value="English" selected>English</option>
+              <option value="hindi">Hindi</option>
+              <option value="marathi">Marathi</option>
+            </select>
+          </form>
+        </div>
+      </div>
     </header>
     <!--header section start-->
+    <!-- banner start -->
+    <div class="banner">
+      <img src="assets/images/mirror.jpg" alt="Banner">
+    </div>
+    <!-- banner end -->
     <!--main section start-->
     <main>
-
+      <section class="tab-section">
+        <ul class="main-menu">
+          <li class="main-menu-item"><a href="#" title="Use-Cases">Use-Cases</a></li>
+          <li class="main-menu-item"><a href="#" title="Campaigns">Campaigns</a></li>
+          <li class="main-menu-item"><a href="#" title="Products">Products</a></li>
+          <li class="main-menu-item"><a href="#" title="Watch-Video">Watch-Video</a></li>
+        </ul>
+        <div class="wrapper">
+          <div class="voucher-enquiry">
+            <h2>BOOKMYSHOW VOUCHER ENQUIRY</h2>
+            <div class="voucher-main">
+              <div class="voucher-content">
+                <figure>
+                  <img src="assets/images/corporate-vouchers.png" alt="Corporate Vouchers">
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat harum aliquam velit debitis
+                  consequatur delectus dolorum, eos ratione sit culpa tempore ullam labore fugit, temporibus totam
+                  perferendis voluptas placeat dolore. Quibusdam voluptas vel ratione hic aliquam, ex iste natus fugiat
+                  nobis sint, facere provident culpa iure earum a quas illo consequuntur.</p>
+                <div class="download-voucher">
+                  <img src="assets/images/cv-reel.png" alt="Download">
+                  <a href="#FIXME" title="Download Voucher">DOWNLOAD BROCHURE</a>
+                </div>
+              </div>
+              <form action="#" class="enquiry-form">
+                <div class="enquiry-form-input">
+                  <input type="text" name="fullname" placeholder="*FULL NAME">
+                </div>
+                <div class="enquiry-form-input">
+                  <input type="text" name="mobileno" placeholder="*MOBILE NUMBER">
+                </div>
+                <div class="enquiry-form-input">
+                  <input type="text" name="companyname" placeholder="*COMPANY NAME">
+                </div>
+                <div class="enquiry-form-input">
+                  <input type="email" name="mail" placeholder="*OFFICIAL MAIL ID">
+                </div>
+                <div class="notify">
+                  <input type="checkbox" name="notifycheck" id="notifycheck">I'am not a robot
+                  <figure>
+                    <img src="assets/images/captcha.gif" alt="captcha">
+                  </figure>
+                </div>
+                <input type="submit" value="SUBMIT">
+              </form>
+            </div>
+          </div>
+          <div class="campaign">
+            <h2>CAMPAIGNS</h2>
+            <ul class="product-slider">
+              <div class="btn-prev">
+                <a href="#FIXME"><span>
+                    < </span></a>
+              </div>
+              <li class="card">
+                <a href="#FIXME" title="Promotions">
+                  <figure>
+                    <img src="assets/images/generation.png" alt="generation">
+                  </figure>
+                  <div class="card-content">
+                    <span>Test Drive Promotions</span>
+                    <span>Lead Generation</span>
+                  </div>
+                </a>
+              </li>
+              <li class="card">
+                <a href="#FIXME" title="Exclusive">
+                  <figure>
+                    <img src="assets/images/exclusives.png" alt="exclusives">
+                  </figure>
+                  <div class="card-content">
+                    <span>Old Select Exclusive</span>
+                    <span>Loyalty</span>
+                  </div>
+                </a>
+              </li>
+              <li class="card">
+                <a href="#FIXME" title="Campaign">
+                  <figure>
+                    <img src="assets/images/activation.png" alt="activation">
+                  </figure>
+                  <div class="card-content">
+                    <span>Acuvue CampaignActivation</span>
+                    <span>Brand Promotions</span>
+                  </div>
+                </a>
+              </li>
+              <div class="btn-next">
+                <a href="#FIXME"><span>></span></a>
+              </div>
+            </ul>
+          </div>
+          <div class="products">
+            <ul class="product-list">
+              <li><a href="#FIXME" title="Movie Pack">MOVIE PACK</a></li>
+              <li><a href="#FIXME" title="Gift Vouchers">GIFT VOUCHERS</a></li>
+              <li><a href="#FIXME" title="Winpins">WINPINS</a></li>
+            </ul>
+            <ul class="product-content">
+              <li class="active">
+                <figure>
+                  <img src="assets/images/movie-pack.png" alt="Movie Pack">
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, cum iste tempora delectus optio odio
+                  quod vitae dolores, non ut esse officiis corrupti amet, possimus laboriosam minus deleniti. Rem
+                  doloremque, magni quas optio rerum deleniti odit non consectetur. Cupiditate culpa architecto
+                  reiciendis dignissimos impedit fuga commodi laudantium quos exercitationem qui?</p>
+              </li>
+              <li>
+                <figure>
+                  <img src="assets/images/gift-voucher.png" alt="Gift Voucher">
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, cum iste tempora delectus optio odio
+                  quod vitae dolores, non ut esse officiis corrupti amet, possimus laboriosam minus deleniti. Rem
+                  doloremque, magni quas optio rerum deleniti odit non consectetur. Cupiditate culpa architecto
+                  reiciendis dignissimos impedit fuga commodi laudantium quos exercitationem qui?</p>
+              </li>
+              <li>
+                <figure>
+                  <img src="assets/images/winpin.png" alt="Winpins">
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, cum iste tempora delectus optio odio
+                  quod vitae dolores, non ut esse officiis corrupti amet, possimus laboriosam minus deleniti. Rem
+                  doloremque, magni quas optio rerum deleniti odit non consectetur. Cupiditate culpa architecto
+                  reiciendis dignissimos impedit fuga commodi laudantium quos exercitationem qui?</p>
+              </li>
+            </ul>
+          </div>
+          <div class="testimonials">
+            <h2>TESTIMONIALS</h2>
+            <ul class="testimonials-list">
+              <div class="btn-prev">
+                <a href="#FIXME"><span>
+                    <</span></a>
+              </div>
+              <li>
+                <img src="assets/images/mc-logo.png" alt="Mastercard">
+              </li>
+              <li>
+                <img src="assets/images/cm-logo.png" alt="Mastercard">
+              </li>
+              <li>
+                <img src="assets/images/hp.png" alt="Mastercard">
+              </li>
+              <li>
+                <img src="assets/images/o-logo.png" alt="Mastercard">
+              </li>
+              <div class="btn-next">
+                <a href="#FIXME"><span>></span></a>
+              </div>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat blanditiis delectus facilis
+              cupiditate dolore. Culpa repellendus natus ipsam dolor. <span>Abhijit Gosh, Regional Marketing
+                Managermahindra holidays and Resorts India Ltd.</span></p>
+          </div>
+          <div class="faqs">
+            <ul class="faqs-menu">
+              <li><a href="#FIXME" title="Gift Voucher">GIFT VOUCHER</a></li>
+              <li><a href="#FIXME" title="Winpins">WINPINS</a></li>
+              <li><a href="#FIXME" title="Movie Pack">MOVIE PACKS</a></li>
+              <li><a href="#FIXME" title="General Queries">GENERAL QUERIES</a></li>
+            </ul>
+            <ul class="faqs-list">
+              <li><a href="#FIXME" title="What is gift voucher">What is gift-voucher</a></li>
+              <li><a href="#FIXME" title="What can i use a Gift-voucher for ?">What can i use a Gift-voucher for ?</a>
+              </li>
+              <li><a href="#FIXME" title="Is there a limit on the number of vouchers that must be booked?">Is there a
+                  limit on the number of vouchers that must be booked?</a></li>
+              <li><a href="#FIXME" title="What is the validity period of a gift-voucher">What is the validity period of
+                  a gift-voucher</a></li>
+              <li><a href="#FIXME" title="Can gift-voucher can be reedeemed against Loyalty or rewards points?">Can
+                  gift-voucher can be reedeemed against Loyalty or rewards points?</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
-
+    <footer>
+      <div class="wrapper">
+        <ul class="footer-menu">
+          <li class="footer-menu-item">
+            <h3>VIDEOS</h3>
+            <ul class="video-list">
+              <li><a href="#FIXME" title="Trailers">Trailers</a></li>
+              <li><a href="#FIXME" title="MyBollywood">MyBollywood</a></li>
+              <li><a href="#FIXME" title="MyTV">MyTV</a></li>
+              <li><a href="#FIXME" title="MyStyle">MyStyle</a></li>
+            </ul>
+            <h3>EVENTS CALENDER</h3>
+            <ul class="event-list">
+              <li><a href="#FIXME" title="Events Near Me Today">Events Near Me Today</a></li>
+              <li><a href="#FIXME" title="Events Happening Tomorrow">Events Happening Tomorrow</a></li>
+              <li><a href="#FIXME" title="Events This Weekend">Events This Weekend</a></li>
+              <li><a href="#FIXME" title="Events Next Weekend">Events Next Weekend</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu-item">
+            <ul class="event-tickets-list">
+              <li><a href="#FIXME" title="Upcoming events in Mumbai">Upcoming events in Mumbai</a></li>
+              <li><a href="#FIXME" title="Upcoming events in Delhi">Upcoming events in Delhi</a></li>
+              <li><a href="#FIXME" title="Upcoming events in Bangluru">Upcoming events in Bangluru</a></li>
+              <li><a href="#FIXME" title="Upcoming events in Chennai">Upcoming events in Chennai</a></li>
+              <li><a href="#FIXME" title="Upcoming events in Hyderabad">Upcoming events in Hyderabad</a></li>
+              <li><a href="#FIXME" title="Upcoming events in Pune">Upcoming events in Pune</a></li>
+              <li><a href="#FIXME" title="Upcoming events in Noida">Upcoming events in Noida</a></li>
+              <li><a href="#FIXME" title="Upcoming events in Ahmedabad">Upcoming events in Ahmedabad</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu-item">
+            <ul class="movie-cinema-celebrity">
+              <li><a href="#FIXME" title="Lates Upcoming Movies">Lates Upcoming Movies</a></li>
+              <li><a href="#FIXME" title="Best Now Showing Movies">Best Now Showing Movies</a></li>
+              <li><a href="#FIXME" title="Cinemas & Theaters">Cinemas & Theaters</a></li>
+              <li><a href="#FIXME" title="Movie Stars And Celebrities">Movie Stars And Celebrities</a></li>
+              <li><a href="#FIXME" title="Cinema Chains">Cinema Chains</a></li>
+              <li><a href="#FIXME" title="All Regions Cinemas">All Regions Cinemas</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu-item">
+            <h3>ARCHEIVED COLLECTION</h3>
+            <ul class="archeived-col">
+              <li><a href="#FIXME" title="Old Movies">Old Movies</a></li>
+              <li><a href="#FIXME" title="Past Events">Past Events</a></li>
+              <li><a href="#FIXME" title="Classic Sports Events">Classic Sports Events</a></li>
+              <li><a href="#FIXME" title="Old Theaters Plays">Old Theaters Plays</a></li>
+              <li><a href="#FIXME" title="Cinema Chains">Cinema Chains</a></li>
+              <li><a href="#FIXME" title="Best of 2021">Best of 2021</a></li>
+            </ul>
+            <h3>COUNTRIES</h3>
+            <ul class="archeived-col">
+              <li><a href="#FIXME" title="Indonesia">Indonesia</a></li>
+              <li><a href="#FIXME" title="New Zeeland">New Zeeland</a></li>
+              <li><a href="#FIXME" title="UAE">UAE</a></li>
+              <li><a href="#FIXME" title="Shri Lanka">Shri Lanka</a></li>
+            </ul>
+          </li>
+        </ul>
+        <h1 class="logo">
+          <img src="assets/images/logo.png" alt="BookMyShow">
+        </h1>
+        <ul class="social">
+          <li><a href="#FIXME" title="Facebook"><Span>Facebook</Span></a></li>
+          <li><a href="#FIXME" title="Twitter"><Span>Twitter</Span></a></li>
+          <li><a href="#FIXME" title="Instagram"><Span>Instagram</Span></a></li>
+          <li><a href="#FIXME" title="Youtube"><Span>Youtube</Span></a></li>
+          <li><a href="#FIXME" title=Pinterest><Span>Pinterest</Span></a></li>
+          <li><a href="#FIXME" title="Google"><Span>Google</Span></a></li>
+          <li><a href="#FIXME" title="Linkdin"><Span>Linkdin</Span></a></li>
+        </ul>
+        <div class="footer-content">
+          <span>Copiright 2021 &COPY; Bigtree Entertainment Pvt Ltd. All Rights Reserved</span>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt nisi facere sed vero libero totam optio
+            iusto? Error architecto quod optio fuga labore ducimus in?</p>
+        </div>
+      </div>
     </footer>
     <!--footer section end-->
 
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
+  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
 <script src="js/script.js"></script> -->
 </body>
+
 </html>
