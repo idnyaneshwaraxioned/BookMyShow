@@ -241,7 +241,7 @@ header {
   border: none;
 }
 
-.header-form::placeholder { 
+.header-form ::placeholder { 
   font-size: 17px;
   font-weight: bold;
   color: #262936;
@@ -429,6 +429,11 @@ header {
 .notify figure { 
   width: 22%;
   margin-left: 45px;
+}
+
+.enquiry-form span { 
+  font-size: 12px;
+  color: #ff0000;
 }
 
 .enquiry-form input[type="submit"] {
