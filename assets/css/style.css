@@ -497,13 +497,13 @@ header {
 .product-content li { display: none; }
 .product-content li.active {
   display: flex;
+  padding: 62px 10px;
   align-items: center;
   justify-content: space-between;
 }
 
 .product-content p { 
   flex-basis: 58%;
-  padding: 62px 10px;
  }
 
 .product-content { 
@@ -528,9 +528,9 @@ header {
 }
 
 .testimonials-list li { 
-  flex-basis: 35%;
   padding: 0px 10%;
- } 
+  flex-basis: 35%;
+} 
 
  .testimonials p {
   padding: 0px 15%;
@@ -542,6 +542,85 @@ header {
   margin: 10px 0;
   display: block;
   }
+
+.faqs-menu {
+  width: 65%;
+  margin: 59px auto 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.faqs-menu li { 
+  padding: 14px 0 ;
+  border: 2px solid #afacac;
+  flex-basis: 25%;
+  background-color: #F3F3F2;
+}
+
+.faqs-menu li:not(:first-child) { border-left: none; }
+
+.faqs-menu a {
+  font-size: 15px;
+  color: #848383;
+}
+
+.faqs-list {
+  width: 100%;
+  text-align: left;
+}
+
+.faqs-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid #f3f3f3;
+  display: block;
+  position: relative;
+}
+
+.faqs-list li:last-child { border: none; }
+
+.faqs-list li::before {
+  content: '\f054';
+  width: 16px;
+  height: 16px;
+  padding: 1px;
+  border-radius: 50%;
+  position: absolute;
+  left: -23px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  font-family: fontAwesome;
+  color: #fff;
+  background-color: #4d4f59;
+}
+
+.faqs-list li a {
+  font-size: 15px;
+  text-transform: uppercase; 
+  color: #4d4f59;
+}
+
+footer { background-color: #37363B;}
+
+footer .logo { width: 10%; }
+footer a {
+  color: #848383;
+}
+
+footer h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #848484;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /*=================================
   main styling ends here
 =================================*/
