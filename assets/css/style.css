@@ -100,9 +100,11 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1835px;
-  width: 98%;
+  width: 96%;
   margin: 0 auto;
 }
+
+a:hover { text-decoration: underline; }
 /*=================================
   Header styling starts here
 =================================*/
@@ -156,7 +158,7 @@ header {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold; 
-  color: #fff;
+  color: #ebebeb;
 }
 
 .home-menu-right .fa { padding-right: 3px; }
@@ -199,6 +201,7 @@ header {
 }
 
 .header-btm .wrapper {
+  width: 98%;
   padding: 8px 0 5px;
   display: flex;
   justify-content: space-between;
@@ -226,6 +229,12 @@ header {
   border: none;
 }
 
+::placeholder { 
+  font-size: 17px;
+  font-weight: bold;
+  color: #262936;
+}
+
 .header-form select {
   width: 22.7%;
   outline: none;
@@ -250,7 +259,7 @@ header {
 .language {
   display: flex;
   align-items: center;
-  flex-basis: 11%;
+  flex-basis: 13%;
 }
 
 .language figure { width: 48%; }
@@ -272,7 +281,7 @@ header {
 =================================*/
 .tab-section {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 70px;
   position: relative;
   text-align: center;
 }
@@ -283,7 +292,7 @@ header {
   display: flex;
   position: absolute;
   left: 50%;
-  top: -.5%;
+  top: -2%;
   transform: translateX(-50%);
   box-shadow: 0 10px 11px #ECECEC;;
   background-color: #fff;
@@ -312,14 +321,15 @@ header {
 
 .tab-section h2 {
   padding: 14px 0;
-  font-size: 22px;
   position: relative;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .tab-section h2::after {
   content: '';
   width: 35px;
-  height: 1px;
+  height: 2px;
   background-color: #B31B40;
   position: absolute;
   bottom: 0;
@@ -358,10 +368,13 @@ header {
   align-items: center;
 }
 
+.download-voucher:hover { box-shadow: 0 0 15px rgba(0,0,0,.5);}
+
 .download-voucher a {
   font-weight: bold;
   padding: 0 20px;
   position: relative;
+  font-size: 15px;
   color: #000;
 }
 
@@ -418,6 +431,8 @@ header {
   background-color: #B31B40;
 }
 
+.enquiry-form input[type="submit"]:hover { box-shadow: 0 0 10px rgba(0,0,0,.5); }
+
 .product-slider {
   padding: 30px;
   display: flex;
@@ -439,6 +454,8 @@ header {
   font-size: 30px;
 }
 
+.btn-prev a,
+.btn-next a{ color: #6BA9DF; }
 .testimonials-list .btn-prev,
 .product-slider .btn-prev { left: 13px; }
 
@@ -497,13 +514,15 @@ header {
 .product-content li { display: none; }
 .product-content li.active {
   display: flex;
-  padding: 62px 10px;
+  padding: 55px 10px;
   align-items: center;
   justify-content: space-between;
 }
 
 .product-content p { 
   flex-basis: 58%;
+  line-height: 20px;
+  color: #4a4a4a;
  }
 
 .product-content { 
@@ -533,15 +552,21 @@ header {
 } 
 
  .testimonials p {
-  padding: 0px 15%;
+
+}
+
+.testimonials p {
+  padding: 0 15%;
   line-height: 22px;
+  font-size: 16px;
   font-weight: bold;
-  color: #4d4f59;
- }
- .testimonials p span { 
-  margin: 10px 0;
+  color: #635f5f;
+}
+
+.testimonials p span{
+  margin: 20px 0;
   display: block;
-  }
+}
 
 .faqs-menu {
   width: 65%;
@@ -553,7 +578,7 @@ header {
 
 .faqs-menu li { 
   padding: 14px 0 ;
-  border: 2px solid #afacac;
+  border: 1px solid #afacac;
   flex-basis: 25%;
   background-color: #F3F3F2;
 }
@@ -562,7 +587,8 @@ header {
 
 .faqs-menu a {
   font-size: 15px;
-  color: #848383;
+  color: #bcbcbc;
+  font-weight: 700;
 }
 
 .faqs-list {
@@ -599,28 +625,12 @@ header {
 
 .faqs-list li a {
   font-size: 15px;
-  text-transform: uppercase; 
-  color: #4d4f59;
-}
-
-footer { background-color: #37363B;}
-
-footer .logo { width: 10%; }
-footer a {
-  color: #848383;
-}
-
-footer h3 {
-  font-size: 15px;
+  text-transform: uppercase;
+  color: #909092;
   font-weight: bold;
-  color: #848484;
 }
 
-.footer-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 /*=================================
   main styling ends here
 =================================*/
@@ -629,11 +639,100 @@ footer h3 {
   footer styling starts here
 =================================*/ 
 
+footer { background-color: #37363B; text-align: center;}
 
+footer a {
+  padding: 0 5px;
+  border-right: 1px solid #848383; 
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #848383;
+}
 
+footer h3 {
+  margin: 33px 0 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #848484;
+}
 
+footer .wrapper { padding: 35px 0 23px; }
 
+.footer-menu {
+  display: flex;
+  text-align: left;
+  position: relative;
+}
 
+.footer-menu-item { flex-basis: 24%; }
+
+.movie-cinema-celebrity li {
+  display: block;
+}
+
+.social { margin: 0 auto; }
+
+.social li { margin: 20px 0; }
+
+.social a {  
+  border: none;
+  margin: 0 22px;
+  position: relative;
+}
+
+.social a span { display: none; }
+
+.social a::after {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -33px;
+  display: grid;
+  align-items: center;
+  font-family: fontAwesome;
+  font-size: 19px;
+  color: #37363B;
+  background-color: #616161;
+}
+
+.social a:hover::after { box-shadow: 0 0 10px #afacac; }
+
+.social a[title="Facebook"]::after { content: '\f09a'; }
+.social a[title="Twitter"]::after { content: '\f099'; }
+.social a[title="Instagram"]::after { content: '\f16d'; }
+.social a[title="Youtube"]::after { content: '\f167'; }
+.social a[title="Pinterest"]::after { content: '\f231'; }
+.social a[title="Google"]::after { content: '\f0d5'; }
+.social a[title="Linkdin"]::after { content: '\f0e1'; }
+
+footer .logo { 
+  width: 10%;
+  margin: 30px auto 35px;
+  position: relative;
+}
+
+footer .logo::after,
+footer .logo::before {
+  content: '';
+  width: 428%;
+  height: 2px;
+  background-color: #afacac;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer .logo::after { left: 112%; }
+footer .logo::before { right: 112%; }
+
+.footer-content { 
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #848383;
+  font-weight: bold;
+}
 
  /*=================================
   footer styling ends here
