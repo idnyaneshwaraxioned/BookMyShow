@@ -491,10 +491,11 @@ header {
 }
  
 .product-list {
-  flex-basis: 27.2%;
   border: 1px solid #000;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  flex-basis: 27.2%;
+  overflow: hidden;
 }
 
 .product-list li {
@@ -502,6 +503,8 @@ header {
   padding: 30px 0;
   border-bottom: 1px solid #000;
 }
+
+.product-list li.active { background-color: #6BA9DF;}
 
 .product-list li:last-child { border: none; }
 
@@ -518,6 +521,8 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
+.product-content li:last-child figure { width: 16%;}
 
 .product-content p { 
   flex-basis: 58%;
@@ -539,7 +544,7 @@ header {
  }
 
  .testimonials-list {
-  padding: 30px;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -548,11 +553,11 @@ header {
 
 .testimonials-list li { 
   padding: 0px 10%;
-  flex-basis: 35%;
 } 
 
- .testimonials p {
-
+.testimonials-list figure { 
+  width: 45%;
+  margin: 0 auto;
 }
 
 .testimonials p {
@@ -740,8 +745,6 @@ footer .logo::before { right: 112%; }
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
+@media only screen and (max-width: 1204px) {
 
 }  

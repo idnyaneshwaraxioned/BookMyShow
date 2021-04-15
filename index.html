@@ -20,6 +20,12 @@
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <!-- // Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -147,10 +153,6 @@
           <div class="campaign">
             <h2>CAMPAIGNS</h2>
             <ul class="product-slider">
-              <div class="btn-prev">
-                <a href="#FIXME"><span>
-                    < </span></a>
-              </div>
               <li class="card">
                 <a href="#FIXME" title="Promotions">
                   <figure>
@@ -184,16 +186,24 @@
                   </div>
                 </a>
               </li>
-              <div class="btn-next">
-                <a href="#FIXME"><span>></span></a>
-              </div>
+              <li class="card">
+                <a href="#FIXME" title="Campaign">
+                  <figure>
+                    <img src="assets/images/adidas-movie-promo-brand-promotions.png" alt="activation">
+                  </figure>
+                  <div class="card-content">
+                    <span>Acuvue CampaignActivation</span>
+                    <span>Brand Promotions</span>
+                  </div>
+                </a>
+              </li>
             </ul>
           </div>
           <div class="products">
             <h2>PRODUCTS</h2>
             <div class="product-grp">
               <ul class="product-list">
-                <li><a href="#FIXME" title="Movie Pack">MOVIE PACK</a></li>
+                <li class="active"><a href="#FIXME" title="Movie Pack">MOVIE PACK</a></li>
                 <li><a href="#FIXME" title="Gift Vouchers">GIFT VOUCHERS</a></li>
                 <li><a href="#FIXME" title="Winpins">WINPINS</a></li>
               </ul>
@@ -231,22 +241,26 @@
           <div class="testimonials">
             <h2>TESTIMONIALS</h2>
             <ul class="testimonials-list">
-              <div class="btn-prev">
-                <a href="#FIXME"><span>
-                    <</span></a>
-              </div>
               <li>
-                <img src="assets/images/mc-logo.png" alt="Mastercard">
+                <figure>
+                  <img src="assets/images/mc-logo.png" alt="Mastercard">
+                </figure>
               </li>
               <li>
-                <img src="assets/images/cm-logo.png" alt="Mastercard">
+                <figure>
+                  <img src="assets/images/cm-logo.png" alt="Club Mahindra">
+                </figure>
               </li>
               <li>
-                <img src="assets/images/hp.png" alt="Mastercard">
+                <figure>
+                  <img src="assets/images/hp.png" alt="Hp">
+                </figure>
               </li>
-              <div class="btn-next">
-                <a href="#FIXME"><span>></span></a>
-              </div>
+              <li>
+                <figure>
+                  <img src="assets/images/o-logo.png" alt="OLA">
+                </figure>
+              </li>
             </ul>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat blanditiis delectus facilis
               cupiditate dolore. Culpa repellendus natus ipsam dolor. <span>Abhijit Gosh, Regional Marketing
@@ -363,9 +377,6 @@
 
   </div>
   <!--container end-->
-
-  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
-<script src="js/script.js"></script> -->
+<script src="assets/js/script.js"></script>
 </body>
-
 </html>
