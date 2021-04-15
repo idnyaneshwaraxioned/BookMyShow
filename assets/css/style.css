@@ -121,8 +121,9 @@ header {
   height: 40px;
   display: none;
   position: absolute;
-  right: 7%;
-  top: 4%;
+  right: 5%;
+  top: 10%;
+  z-index: 2;
 }
 
 .bar1,
@@ -130,11 +131,22 @@ header {
 .bar3 {
   width: 100%;
   height: 0;
-  border-top: 2px solid #000;
+  border-top: 2px solid red;
   margin-bottom: 6px;
   text-indent: -99999px;
   float: left;
+  display: none;
 }
+
+.hamburger::after {
+  content: '\f0c9';
+  position: absolute;
+  font-size: 40px;
+  font-family: fontAwesome;  
+  color: #fff;
+}
+
+.hamburger.active::after { content: '\f00d'; }
 
 .hamburger.active .bar1 { transform: rotate(45deg) translateX(7px); }
 .hamburger.active .bar2 { display: none; }
@@ -229,7 +241,7 @@ header {
   border: none;
 }
 
-::placeholder { 
+.header-form::placeholder { 
   font-size: 17px;
   font-weight: bold;
   color: #262936;
@@ -281,18 +293,18 @@ header {
 =================================*/
 .tab-section {
   width: 100%;
-  padding-top: 70px;
+  padding-top: 82px;
   position: relative;
   text-align: center;
 }
 
 .main-menu {
-  width: 89%;
+  width: 91%;
   border-radius: 40px;
   display: flex;
   position: absolute;
   left: 50%;
-  top: -2%;
+  top: -1.5%;
   transform: translateX(-50%);
   box-shadow: 0 10px 11px #ECECEC;;
   background-color: #fff;
@@ -302,7 +314,7 @@ header {
 .main-menu-item {
   position: relative;
   flex-basis: 25%;
-  border-right: 1px solid #848383;
+  border-right: 1px solid #dadada;
 }
 
 .main-menu-item:last-child { border: none; }
@@ -329,7 +341,7 @@ header {
 .tab-section h2::after {
   content: '';
   width: 35px;
-  height: 2px;
+  height: 1px;
   background-color: #B31B40;
   position: absolute;
   bottom: 0;
@@ -361,7 +373,7 @@ header {
 .download-voucher {
   width: 47%;
   padding: 5px 45px 5px 5px;
-  border: 1px solid #000;
+  border: 1px solid #dcdcdc;
   border-radius: 55px;
   display: flex;
   justify-content: space-between;
@@ -388,7 +400,7 @@ header {
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .enquiry-form-input { 
@@ -491,7 +503,7 @@ header {
 }
  
 .product-list {
-  border: 1px solid #000;
+  border: 1px solid #afacac;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   flex-basis: 27.2%;
@@ -501,7 +513,7 @@ header {
 .product-list li {
   display: block;
   padding: 30px 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #afacac;
 }
 
 .product-list li.active { background-color: #6BA9DF;}
@@ -522,6 +534,14 @@ header {
   justify-content: space-between;
 }
 
+.product-content { 
+  padding: 0 10px;
+  border: 1px solid #afacac;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  flex-basis: 70.5%;;
+}
+
 .product-content li:last-child figure { width: 16%;}
 
 .product-content p { 
@@ -529,14 +549,6 @@ header {
   line-height: 20px;
   color: #4a4a4a;
  }
-
-.product-content { 
-  padding: 0 10px;
-  border: 1px solid #000;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  flex-basis: 71%;;
-}
 
 .product-content li figure { 
   width: 23%;
@@ -581,31 +593,26 @@ header {
   align-items: center;  
 }
 
-.faqs-menu li { 
-  padding: 14px 0 ;
-  border: 1px solid #afacac;
-  flex-basis: 25%;
-  background-color: #F3F3F2;
-}
-
-.faqs-menu li:not(:first-child) { border-left: none; }
-
 .faqs-menu a {
   font-size: 15px;
   color: #bcbcbc;
   font-weight: 700;
 }
 
-.faqs-list {
-  width: 100%;
-  text-align: left;
-}
+.faqs-list { text-align: left; }
 
 .faqs-list li {
   padding: 16px 0;
   border-bottom: 1px solid #f3f3f3;
   display: block;
   position: relative;
+}
+
+.faqs-menu li { 
+  padding: 14px 0 ;
+  border: 1px solid #afacac;
+  flex-basis: 25%;
+  background-color: #F3F3F2;
 }
 
 .faqs-list li:last-child { border: none; }
@@ -747,4 +754,146 @@ footer .logo::before { right: 112%; }
 /*media query for 995px starts here*/
 @media only screen and (max-width: 1204px) {
 
-}  
+header { 
+  position: relative;
+  background-color: #6BA9DF;
+}
+
+.hamburger { display: block; }
+
+.header-top { padding: 10px 0; }
+
+.header-top nav { 
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+  background-color: #4d4f59; 
+}
+
+.home-menu-left,
+.home-menu-right { display: none;}
+
+.home-menu-left.active,
+.home-menu-right.active { display: block; }
+
+.home-menu-left li,
+.home-menu-right li{
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+} 
+
+.header-top nav span { position: unset; }
+
+.home-menu-left li:last-child::after { position: unset; }
+
+.header-top a .fa { font-size: 20px; }
+
+.header-btm .wrapper {
+  display: block;
+}
+
+.header-btm .wrapper .logo {
+  width: 20%;
+}
+
+.language { display: none; }
+
+.header-form input[type='text'] {
+  width: 100%;
+  padding: 5px 13px;
+}
+.header-form ::placeholder { 
+  font-size: 14px;
+  font-weight: normal;
+  color: #262936;
+}
+
+.voucher-main { flex-direction: column; }
+
+.download-voucher {
+  width: 30%;
+  margin: 30px 0;
+}
+
+.enquiry-form { flex-direction: column; }
+
+.enquiry-form-input { 
+  width: 100%;
+  margin: 10px 0;
+}
+
+.notify { 
+  width: 90%;
+  margin: 10px 0;
+}
+
+.main-menu {
+  width: 69%; 
+  top: -1%;
+}
+
+.product-grp { flex-direction: column;}
+
+.product-list {
+  width: 100%;
+  border-radius: 20px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list li {
+  padding: 10px 0;
+  flex-basis: 35%;
+  border: 1px solid #848484;
+}
+
+.product-content li.active { flex-direction: column; }
+
+
+.product-content li:last-child figure { width: 16%;}
+
+.product-content p { 
+  flex-basis: 58%;
+  line-height: 20px;
+  color: #4a4a4a;
+ }
+
+.product-content { border-radius: 20px; }
+
+.product-content li figure { 
+  width: 37%;
+  margin: 13px 0px;
+ }
+
+ .faqs-menu { flex-direction: column; }
+ .faqs-menu li { width: 100%; }
+
+ .faqs-menu li { 
+  padding: 14px 0 ;
+  border: 1px solid #afacac;
+  flex-basis: 25%;
+  background-color: #F3F3F2;
+}
+.faqs-menu li a { color: #848484; }
+
+
+/* ============footer======== */
+
+.footer-menu { flex-direction: column; }
+footer .logo { width: 30%; }
+
+footer .logo::after, 
+footer .logo::before { width: 0; }
+footer a { font-size: 17px; }
+}
+
+@media only screen and (max-width: 1204px) {
+
+.main-menu-item a {
+  padding: 5px 2px;
+  font-size: 16px;
+  }
+}
+

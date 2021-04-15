@@ -34,11 +34,13 @@ tabs();
 function toggle() {
 
 	let hamburger = document.querySelector('.hamburger');
-	let menu = document.querySelector('.menu');
+	let menu = document.querySelector('.home-menu-left');
+	let menu2 = document.querySelector('.home-menu-right')
 
 	hamburger.addEventListener('click', function () {
 		hamburger.classList.toggle('active');
 		menu.classList.toggle('active');
+		menu2.classList.toggle('active');
 	});
 }
 
