@@ -247,8 +247,17 @@ header {
   margin: 0 8px;
 }
 
+.language {
+  display: flex;
+  align-items: center;
+  flex-basis: 11%;
+}
+
+.language figure { width: 48%; }
+
 .language select { 
   width: 62%;
+  height: 30px;
   padding: 5px;
   border-radius: 5px;
   color: #848383;
@@ -299,7 +308,7 @@ header {
 
 .voucher-content figure { width: 20%; }
 
-.tab-section .wrapper {   width: 66%; }
+.tab-section .wrapper {   width: 65%; }
 
 .tab-section h2 {
   padding: 14px 0;
@@ -408,6 +417,131 @@ header {
   color: #fff;
   background-color: #B31B40;
 }
+
+.product-slider {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.testimonials-list .btn-next,
+.testimonials-list .btn-prev,
+.product-slider .btn-prev,
+.product-slider .btn-next {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+}
+
+.testimonials-list .btn-prev,
+.product-slider .btn-prev { left: 13px; }
+
+.testimonials-list .btn-next,
+.product-slider .btn-next { right: 13px; }
+
+.card { flex-basis: 29%; }
+
+.card figure { 
+  width: 74%;
+  margin: 0 auto;
+  transition: .3s;
+}
+
+.card:hover figure { 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5); 
+}
+
+.card-content span {
+  display: block;
+  margin: 9px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4d4f59;
+  }
+
+.product-grp {
+  padding: 37px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.product-list {
+  flex-basis: 27.2%;
+  border: 1px solid #000;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.product-list li {
+  display: block;
+  padding: 30px 0;
+  border-bottom: 1px solid #000;
+}
+
+.product-list li:last-child { border: none; }
+
+.product-list li a { 
+  font-size: 20px;
+  font-weight: bold;
+  color: #4d4f59;
+ }
+
+.product-content li { display: none; }
+.product-content li.active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-content p { 
+  flex-basis: 58%;
+  padding: 62px 10px;
+ }
+
+.product-content { 
+  padding: 0 10px;
+  border: 1px solid #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  flex-basis: 71%;;
+}
+
+.product-content li figure { 
+  width: 23%;
+  margin: 0px 3px;
+ }
+
+ .testimonials-list {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.testimonials-list li { 
+  flex-basis: 35%;
+  padding: 0px 10%;
+ } 
+
+ .testimonials p {
+  padding: 0px 15%;
+  line-height: 22px;
+  font-weight: bold;
+  color: #4d4f59;
+ }
+ .testimonials p span { 
+  margin: 10px 0;
+  display: block;
+  }
 /*=================================
   main styling ends here
 =================================*/
